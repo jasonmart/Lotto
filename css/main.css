@@ -55,15 +55,15 @@ ul {
 /* LINK STYLES ----------------*/
 
 a:link {
-  color: rgb(100, 100, 100);
+  color: white;
 }
 
 a:visited {
-  color: rgb(200, 200, 200);
+  color: rgb(150, 150, 150);
 }
 
 a:hover {
-  color: rgb(150, 150, 150);
+  color: white;
 }
 
 
@@ -168,5 +168,28 @@ pre {
     height: 7rem;
     line-height: 7rem;
     font-size: 3em;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 1334px){
+  .wrapper {
+    max-height: 90%;
+    margin: 5px auto;
+  }
+
+  .single-numbers {
+    margin: 0 1.5%;
+  }
+
+  #gametype {
+    font-size: 0.75em;
+  }
+
+  .button {
+    margin: 5px auto;
+  }
+
+  .game {
+    margin-bottom: 5px;
   }
 }

@@ -52,18 +52,16 @@ function play() {
 
 // Populates the arrays that represent the set of balls
 
-function populate(white, special) {
+function populate(maxWhite, maxSpecial) {
   var popWhite = [];
   var popSpecial = [];
-  var maxWhite = white;
-  var MaxSpecial = special;
   var index = 1;
   while (index <= maxWhite) {
     popWhite.push(index);
     index++;
   }
   index = 1;
-  while (index <= MaxSpecial) {
+  while (index <= maxSpecial) {
     popSpecial.push(index);
     index++;
   }
@@ -73,8 +71,6 @@ function populate(white, special) {
 // Drawing function
 
 function draw(popWhite, popSpecial) {
-  var popWhite = popWhite;
-  var popSpecial = popSpecial;
   var whiteArray = [];
   var specialArray = [];
   for (i = 0; i < 5; i++) {
