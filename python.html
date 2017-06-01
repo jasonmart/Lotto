@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Lotto Numbers (in Python)</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="wrapper python">
+    <section>
+      <h1>Lottery Numbers (in Python)</h1>
+
+      <pre><code>
+from random import random
+
+# hardcoded for Powerball.
+def drawing():
+# setup drawing for play:
+
+	# create white number pool
+	number_array = []
+	for i in range (1, 70):
+		number_array.append(i)
+	#print number_array
+
+	# create powerball pool
+	number_array_red = []
+	for j in range (1, 27):
+		number_array_red.append(j)
+
+# draw numbers:
+	white = []
+	index_draw = []
+	for w in range(0, 5):
+		wlen = len(number_array)
+		index_draw = int(wlen * random()) # selects a number (by list index)
+		theNumber = number_array[index_draw] # grabs the value out of the list
+		white.append(theNumber)			# adds it to the drawn number list
+		number_array.remove(theNumber) # removes selected number from pool
+	#print number_array
+
+	white = sorted(white)
+	special_draw = int(round(25 * random()))
+	red = number_array_red[special_draw]
+
+	print "\n The numbers drawn are: ", white, red, "\n"
+
+n_games = int(raw_input("How many games would you like to play? (20 Maximum):"))
+if (n_games <= 20):
+	for i in range(0, n_games):
+		drawing()
+else:
+	print "Sorry, no more than 20 games please."
+      </code></pre>
+    </section>
+  </div>
+</body>
+
+</html>

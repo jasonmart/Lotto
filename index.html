@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Lotto Numbers</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="wrapper">
+    <section>
+      <h1>Lottery Numbers</h1>
+      <button class="game" autofocus id="power" type="button" onClick="main(1);">Powerball</button>
+      <button class="game" id="mega" type="button" onClick="main(2);">Mega Millions</button>
+      <p id="gametype">&nbsp;</p>
+      <ul class="numbers">
+        <li class="single-numbers gradient">?</li>
+        <li class="single-numbers gradient">?</li>
+        <li class="single-numbers gradient">?</li>
+        <li class="single-numbers gradient">?</li>
+        <li class="single-numbers gradient">?</li>
+        <li class="single-numbers gradient">?</li>
+      </ul>
+      <button class="button" type="button" id="play" onClick="play();">Play Again</button>
+    </section>
+    <footer>
+      <details>
+        <summary>About this game...</summary>
+        <p class="summary">This originated from a python script I wrote which you can take a look at <a href="python.html">here.</a></p>
+      </details>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/lotto.js"></script>
+</body>
+
+</html>
