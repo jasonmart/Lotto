@@ -12,7 +12,7 @@ This repository is maintained publicly to preserve my historical coding timeline
 
 ### 🚀 Live Demo
 
-You can interact with the live project here: ** ** 
+You can interact with the live project here: <a href="https://jasonmart.github.io/Lotto/">https://jasonmart.github.io/Lotto/</a> 
 
 ### 🛠️ Tech Stack
 
