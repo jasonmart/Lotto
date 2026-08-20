@@ -1,3 +1,5 @@
+<img width="277" height="456" alt="Screenshot_Lotto" src="https://github.com/user-attachments/assets/ec05706f-1730-4e8c-abc3-2376532c1b80" />
+
 ### 🎲 Vintage Lotto Number Generator
 
 A lightweight, purely frontend lottery number generator built using vanilla web technologies. 
